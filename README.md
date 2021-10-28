@@ -10,26 +10,18 @@
 #### API ---> https://file-transfer-ap.herokuapp.com
 
 ## To upload a file
-# ----------------------
-
 ### Request
 #### POST /api/files
 
 ## To get data and download link of a particular file
-# ----------------------
-
 ### Request
 #### GET /files/uuid
 
 ##  To download a particular file
-# ----------------------
-
 ### Request
 #### GET /files/download/uuid
 
 ## To send mail with download link of a particular file to someone
-# ----------------------
-
 ### Request
 #### POST /api/files/send
 
