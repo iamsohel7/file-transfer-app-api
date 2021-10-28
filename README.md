@@ -1,3 +1,3 @@
 # File Transfer App API
 
-######## Rest api using Node, Express, Mongo. We will build rest api for a simple file sharing app.
+###### Rest api using Node, Express, Mongo. We will build rest api for a simple file sharing app.
