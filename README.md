@@ -14,18 +14,18 @@
 #### POST /api/files   
 ### Body
 #### filename and the file to be uploaded 
-
-
+#
+#
 ## To get data and download link of a particular file
 ### Request
 #### GET /files/uuid
-
-
+#
+#
 ##  To download a particular file
 ### Request
 #### GET /files/download/uuid
-
-
+#
+#
 ## To send mail with download link of a particular file to someone
 ### Request
 #### POST /api/files/send
