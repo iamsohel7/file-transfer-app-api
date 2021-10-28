@@ -1,3 +1,7 @@
 # File Transfer App API
 
-###### Rest api using Node, Express, Mongo. We will build rest api for a simple file sharing app.
+##### Rest api using Node, Express, Mongo.
+
+## Installation
+
+##### After download or clone run npm install OR yarn install to install all the dependancies. also do not forget to rename example.env into .env an put all creadentials.
