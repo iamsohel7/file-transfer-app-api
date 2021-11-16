@@ -12,7 +12,7 @@ router.get('/:uuid', async (req, res) => {
             return res.status(400).json({ error: 'Link has been expired.'});
         } 
         
-        return res.status(200).json({  uuid: file.uuid, fileName: file.fileName, fileSize: file.size, downloadLink: `${process.env.APP_BASE_URL}/files/download/${file.uuid}`});
+        return res.status(200).render('download',{  uuid: file.uuid, fileName: file.fileName, fileSize: file.size, downloadLink: `${process.env.APP_BASE_URL}/files/download/${file.uuid}`});
     } catch(err) {
         return res.status(400).json({ error: 'Something went wrong.'});
     }

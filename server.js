@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+const path = require('path');
 
 require('dotenv').config();
 
@@ -21,7 +21,7 @@ const corsOptions = {
 
 app.use(cors())
 app.use(express.json());
-
+app.use(express.static('public'));
 //DB config
 const connection_url = process.env.ATLAS_URI;
 
@@ -40,6 +40,8 @@ const filesRoute = require('./routes/files');
 const showRoute = require('./routes/show');
 const  downloadRoute = require('./routes/downloads')
 
+app.set('views', path.join(__dirname, '/views'));
+app.set('view engine', 'ejs');
 
 app.use('/api/files', filesRoute);
 app.use('/files', showRoute)
